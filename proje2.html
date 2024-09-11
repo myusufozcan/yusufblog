@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="y.png">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      header {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+      header img {
+        width: 100%;
+        height: auto;
+      }
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      header h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      main {
+        padding: 40px 20px;
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+      footer {
+        margin-top: 50px;
+        background-color: #dc3545;
+        padding: 20px;
+        color: white;
+      }
+      i {
+        margin-left: 50px;
+        font-size: 45px;
+        color: white;
+      }
+      i:hover {
+        opacity: 0.7;
+      }
+      .search-results {
+        display: none; /* Başlangıçta gizle */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        border: 1px solid #ced4da;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .search-results p {
+        margin: 5px 0;
+      }
+      .search-results a {
+        text-decoration: none;
+        color: #333;
+      }
+      .search-results a:hover {
+        background-color: #f8d7da;
+        padding: 2px 5px;
+        border-radius: 3px;
+      }
+    </style>
+    <title>Blog 2 - Yusuf Özcan</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Yusuf Özcan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" target="_blank">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="iletisim.html" target="_blank">İletişim ve Hakkımda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bloglarım
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="proje1.html">Yapay Zeka</a></li>
+                <li><a class="dropdown-item" href="proje2.html">Web Tasarımı</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="proje3.html">Veri Güvenliği</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="uyeler.html">Üyeler</a>
+            </li>
+          </ul>
+          <form class="d-flex position-relative" id="searchForm" role="search">
+            <input class="form-control me-2" type="search" id="searchInput" placeholder="Blog Ara" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Ara</button>
+            <div id="searchResults" class="search-results"></div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <img src="web.jpg" alt="Blog 2">
+      <div class="overlay"></div>
+      <h1>Web Tasarımın Temelleri</h1>
+    </header>
+
+    <main>
+        <p>Web tasarımı, internet sitelerinin estetik ve işlevsel açıdan kullanıcıya en iyi deneyimi sunmasını sağlayan bir süreçtir. Temel web tasarımı, kullanıcı dostu arayüzler oluşturmayı ve görsel tasarım ilkelerini etkili bir şekilde kullanmayı içerir. İyi bir web tasarımı, sitenin amacına uygun ve kullanıcıların kolayca gezinmesine olanak tanıyan bir yapıda olmalıdır.
+
+            Web tasarımının temel unsurları arasında HTML, CSS ve JavaScript yer alır. HTML, web sitelerinin iskeletini oluşturarak içeriklerin doğru bir şekilde yapılandırılmasını sağlar. CSS ise sitenin görsel tasarımını, yani renkler, yazı tipleri ve düzenlemeler gibi stil özelliklerini belirler. JavaScript ise sitenin daha etkileşimli ve dinamik hale gelmesine olanak tanır.
+            
+            Mobil cihaz kullanımının artmasıyla birlikte responsive (duyarlı) tasarım da önem kazanmıştır. Responsive tasarım, sitelerin farklı ekran boyutlarına uyum sağlaması anlamına gelir ve mobil kullanıcı deneyimini iyileştirir. Ayrıca, iyi bir web sitesi tasarımında hız, erişilebilirlik ve SEO (arama motoru optimizasyonu) faktörleri de dikkate alınmalıdır. 
+            
+            Sonuç olarak, web tasarımı temel bilgileri öğrenmek, modern bir internet sitesi oluşturmak için ilk adımdır. Estetik, işlevsellik ve erişilebilirlik dengesi, başarılı bir web sitesinin anahtar unsurlarındandır.</p>
+    </main>
+
+    <footer class="bg-danger p-5 text-white text-center">
+      <a href="https://www.instagram.com" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com" target="_blank" class="text-white"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com" target="_blank" class="text-white"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com" target="_blank" class="text-white"><i class="fab fa-github"></i></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.getElementById('searchForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Formun sayfayı yenilemesini engeller
+
+        const query = document.getElementById('searchInput').value.trim();
+        const searchResults = document.getElementById('searchResults');
+        searchResults.innerHTML = ''; // Eski sonuçları temizle
+
+        if (query === '') {
+          alert('Lütfen arama terimi giriniz.'); // Hata mesajını göster
+          return;
+        }
+
+        // Örnek arama sonuçları
+        const blogs = [
+          { title: 'Yapay Zeka', link: 'proje1.html' },
+          { title: 'Web Tasarımı', link: 'proje2.html' },
+          { title: 'Veri Güvenliği', link: 'proje3.html' }
+        ];
+
+        const filteredBlogs = blogs.filter(blog => blog.title.toLowerCase().includes(query.toLowerCase()));
+
+        if (filteredBlogs.length > 0) {
+          filteredBlogs.forEach(blog => {
+            const resultItem = document.createElement('p');
+            resultItem.innerHTML = `<a href="${blog.link}">${blog.title}</a>`;
+            searchResults.appendChild(resultItem);
+          });
+          searchResults.style.display = 'block'; // Sonuçları göster
+        } else {
+          searchResults.innerHTML = '<p>Sonuç bulunamadı.</p>';
+          searchResults.style.display = 'block'; // Sonuç bulunamadı mesajını göster
+        }
+      });
+
+      document.getElementById('searchInput').addEventListener('input', function () {
+        const searchResults = document.getElementById('searchResults');
+        searchResults.style.display = 'none'; // Arama yapılırken sonuçları gizle
+      });
+    </script>
+  </body>
+</html>
